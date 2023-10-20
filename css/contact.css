@@ -1,0 +1,154 @@
+nav {
+  height: 50px;
+  background: seagreen;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+}
+
+nav .logo a {
+  font-size: 40px;
+  color: White;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: underline;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-style: bold;
+  font-size: 24px;
+  
+  letter-spacing: 1px;
+  padding: 8px 10px;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+nav ul li a:hover, 
+nav ul li a:active {
+  color: black;
+  background: white;
+}
+nav .menu-btn i {
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+#click {
+  display: none;
+}
+
+@media (max-width: 940px) {
+  nav .menu-btn i {
+      display: block;
+  }
+ 
+nav ul {
+  position: fixed;
+  top: 50px;
+  left: 100%;
+  background: black;
+  height: 100vh;
+  width: 100%;
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+#click:checked + ul {
+  left: 0;
+}
+nav ul li {
+  margin: 40px 0;
+  font-size: 20px;
+  display: block;
+}
+nav ul li a:hover, 
+nav ul li a:active {
+  color: cyan;
+  background: none;
+}
+}
+
+* {
+    box-sizing: border-box;
+  }
+    
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; 
+  }
+    
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+    width: 100%;
+    }
+  }
+  
+body {
+  background-color: seagreen;
+  text-align: center;
+  padding-top: 5rem;
+}
+  
+h2 {
+  text-decoration: underline;
+}
+
+/* Styling to social media icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+  
+.fa:hover {
+  opacity: 0.7;
+}
+  
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+  
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+  
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+  

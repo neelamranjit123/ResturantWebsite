@@ -1,0 +1,253 @@
+nav {
+  height: 50px;
+  background: seagreen;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 100px;
+}
+nav .logo a {
+  font-size: 40px;
+  color: White;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: underline;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-style: bold;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 8px 10px;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+nav ul li a:hover, 
+nav ul li a:active {
+  color: black;
+  background: white;
+}
+nav .menu-btn i {
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+#click {
+  display: none;
+}
+
+@media (max-width: 940px) {
+  nav .menu-btn i {
+      display: block;
+  }
+  /* #click:checked ~ nnnnnnnnnnnnnnnnnnnnnnnnn
+} */
+nav ul {
+  position: fixed;
+  top: 50px;
+  left: 100%;
+  background: black;
+  height: 100vh;
+  width: 100%;
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+#click:checked ~ ul {
+  left: 0%;
+}
+nav ul li {
+  margin: 40px 0;
+}
+nav ul li {
+  font-size: 20px;
+  display: block;
+}
+nav ul li a:hover, 
+nav ul li a:active {
+  color: cyan;
+  background: none;
+}
+}
+
+body {
+    font-size: 13px;
+    
+    color: #222;
+    background: #f8f8f8;
+    font-weight: 400;
+    font-size: large;
+    font-weight: bold;
+  }
+   
+  main {
+    background: seagreen;
+    padding: 10px 0;
+  }
+   
+  .reservation {
+    margin-bottom: 0px;
+  }
+    
+  .container {
+    width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 15px 16px 0.17px rgba(0, 0, 0, 0.05);
+  }
+    
+  .reservation-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+    
+  /* a links and form inputs */
+  a:focus, a:active {
+    text-decoration: none;
+    outline: none;
+    transition: all 300ms ease 0;
+  }
+   
+  input {
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 6px 30px;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    appearance: unset;
+  }
+    
+  input:focus {
+    outline: none;
+    box-shadow: none;
+  }
+    
+  input[type="checkbox"] {
+    appearance: checkbox;
+  }
+    
+  p {
+    margin-bottom: 0px;
+    font-size: 15px;
+    color: rgb(5, 1, 1);
+  }
+    
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    color: #222;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+  }
+   
+  .form-title {
+    margin-bottom: 33px;
+  }
+    
+  .form-submit {
+    display: inline-block;
+    background: seagreen;
+    color: #fff;
+    border-bottom: none;
+    width: auto;
+    padding: 15px 39px;
+    border-radius: 10px;
+    margin-top: 25px;
+    cursor: pointer;
+  }
+    
+  .form-submit:hover {
+    background: darkslategrey;
+    color: white;
+  }
+    
+  .reservation-form {
+    margin: 75px;
+    padding-left: 34px;
+  }
+   
+  .register-form {
+    width: 100%;
+  }
+    
+  .form-group {
+    position: relative;
+    margin-bottom: 25px;
+    overflow: hidden;
+  }
+    
+  .form-group:last-child {
+    margin-bottom: 0;
+    }
+    
+  label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #222;
+  }
+    
+  /* Resizing while small screen */
+  @media screen and (max-width: 1200px) {
+    .container {
+      width: calc(100% - 30px);
+      max-width: 100%;
+    }
+  }
+    
+  @media screen and (min-width: 1024px) {
+    .container {
+      width: 1200px;
+    }
+  }
+    
+  @media screen and (max-width: 768px) {
+    .reservation-content {
+      flex-direction: column;
+    }
+    
+    .reservation-form {
+      margin: 0;
+      padding: 0 30px;
+    }
+   
+    .reservation-form {
+      width: auto;
+    }
+    
+    .form-button {
+      text-align: center;
+    }
+    
+    .form-title {
+      text-align: center;
+    }
+  }
+  
+  
+  .hidden {
+    display: none;
+  }
+  
+  .reservation-form1 {
+    text-align: center;
+  }
+    
